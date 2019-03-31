@@ -1,6 +1,7 @@
-/*
+/**
  * 290
  */
+
 import java.util.HashMap;
 
 public class WordPattern{

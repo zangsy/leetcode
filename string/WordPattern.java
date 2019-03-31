@@ -1,9 +1,7 @@
+import java.util.HashMap;
 /**
  * 290
  */
-
-import java.util.HashMap;
-
 public class WordPattern{
     public boolean wordPattern(String pattern, String str) {
         String[] splitStr = str.split("\\s+");

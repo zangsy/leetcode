@@ -9,7 +9,6 @@
 *.log
 *.ctxt
 .mtj.tmp/
-*.idea
 *.jar
 *.war
 *.ear
@@ -23,7 +22,7 @@ hs_err_pid*
 .directory
 .Trash-*
 .nfs*
-*.DS_Store
+.DS_Store
 .AppleDouble
 .LSOverride
 Icon

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 /**
  * 242
@@ -32,14 +33,29 @@ public class ValidAnagram {
         return true;
     }
 
+    public boolean isAnagram2(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        char[] sArray = s.toCharArray();
+        char[] tArray = t.toCharArray();
+
+        Arrays.sort(sArray);
+        Arrays.sort(tArray);
+
+        return Arrays.equals(sArray, tArray);
+    }
+
     public static void main(String[] args) {
         ValidAnagram va = new ValidAnagram();
         String s = "anagram";
         String t = "nagaram";
         System.out.println(va.isAnagram(s, t));
+        System.out.println(va.isAnagram2(s, t));
 
         s = "rat";
         t = "car";
         System.out.println(va.isAnagram(s, t));
+        System.out.println(va.isAnagram2(s, t));
     }
 }

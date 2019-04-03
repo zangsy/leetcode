@@ -16,7 +16,7 @@ public class LargestNumber {
             public int compare(String o1, String o2) {
                 String o1First = o1 + o2;
                 String o2First = o2 + o1;
-                return o2First.compareTo(o1First); // Reverse order, larger first.
+                return o2First.compareTo(o1First); // Reverse order of the original, larger first.
             }
         };
 
